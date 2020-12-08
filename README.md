@@ -66,4 +66,4 @@ Insurers write policies in HIPML using HIPML editors. The generated policy docum
 ### License notice:
 - All the code in the repository is shared under the [MIT License](https://opensource.org/licenses/MIT).
 
-&copy; - 2019, Vitraya Technologies
+&copy; - 2020, Vitraya Technologies
