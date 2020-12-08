@@ -43,7 +43,7 @@ So, the need to create HIPML arises especially keeping in mind the changes in th
 ### Design choices:
 Health insurance policy documents, at least the most important parts, are technically a set of rules for eligibility and coverage on top of defined entities (like We pay you X% of “Sum Insured” for treatment Y if the hospitalization has occurred and is more than Z days). If we are to develop a DSL, that is primarily meant for machines and software programmers (like most of FHIR standards), to write entity definitions and rules, we could choose something like XML/JSON + XSLT or equivalent. Even better, we could use programming-language-neutral [pseudo code](https://en.wikipedia.org/wiki/Pseudocode#Machine_compilation_of_pseudocode_style_languages) to write these rules, which could be parsed by computer programs. But, the challenge here is to make it usable (not just readable) by policy writers who are mostly non-programmers. This leads us to design a simple language that is english-like, easily memorized and using fewer special characters that are not typically used in written English.
 
-### [HIPML Specification](https://gitlab.com/gopi.vitraya/policy-markup-language/blob/master/Specification.md)
+### [HIPML Specification](https://github.com/vitrayatech/hipml/blob/master/Specification.md)
 
 ### HIPML in practice:
 Insurers write policies in HIPML using HIPML editors. The generated policy documents along with some input parameters would be parsed by computer programs to determine the eligibility and coverage rules. The HIPML parsing libraries in various programming languages would be part of this project and published along with the spec.
@@ -58,8 +58,8 @@ Insurers write policies in HIPML using HIPML editors. The generated policy docum
 
 | S.No. | Milestone | Status | Notes |
 |-------|-----------|--------|-------|
-| 1 | HIPML Specification (Draft Proposal) | COMPLETED | v0.1.0 is ready to [view](https://gitlab.com/gopi.vitraya/policy-markup-language/blob/master/Specification.md) |
-| 2 | HIPML Parser in one programming language | COMPLETED | ANTLR parser spec [available](https://github.com/vitrayagithub/hipml/blob/master/Implementation/ANTLR/HIPML.g4). This means the parsers could be generated in multiple programming languages including Java, JavaScript, Python, etc.. See [here](https://github.com/antlr/antlr4/blob/master/doc/targets.md).|
+| 1 | HIPML Specification (Draft Proposal) | COMPLETED | v0.1.0 is ready to [view](https://github.com/vitrayatech/hipml/blob/master/Specification.md) |
+| 2 | HIPML Parser in one programming language | COMPLETED | ANTLR parser spec [available](https://github.com/vitrayatech/hipml/blob/master/Implementation/ANTLR/HIPML.g4). This means the parsers could be generated in multiple programming languages including Java, JavaScript, Python, etc.. See [here](https://github.com/antlr/antlr4/blob/master/doc/targets.md).|
 | 3 | An application built with HIPML to demonstrate its usage. | IN PROGRESS | A Policy editor with the ability to write policies, take policy variables as input and determine coverage.|
 | 4 | HIPML v0.2.0 with all the sections covered for retail and group policies | TO DO | |
 
